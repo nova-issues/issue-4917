@@ -7,6 +7,7 @@ use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Country;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Timezone;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -45,6 +46,33 @@ class Profile extends Resource
     {
         return [
             ID::make()->sortable(),
+
+            Text::make('aaa')->readonly(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
+            Text::make('aaa')->readonly()->hideFromIndex(),
 
             BelongsTo::make('User')
                 ->searchable(),
